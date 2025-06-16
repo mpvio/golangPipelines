@@ -7,10 +7,11 @@ import (
 	s "pipes/c_stopping_short"
 	e "pipes/d_explicit_cancellation"
 	d "pipes/e_digest_a_tree"
+	fi "pipes/f_fibonacci"
 )
 
 func main() {
-	TreeDigest()
+	Fibonacci()
 }
 
 func Basic() {
@@ -41,4 +42,9 @@ func TreeDigest() {
 	d.DefaultTreeDigest()
 	d.ParallelTreeDigest()
 	d.BoundedParallelTreeDigest()
+}
+
+func Fibonacci() {
+	fi.FibonacciChannel(10)
+	fi.FibonacciLs(10)
 }
