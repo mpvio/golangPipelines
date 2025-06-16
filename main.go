@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	Fibonacci()
+	FibonacciWithDone()
 }
 
 func Basic() {
@@ -44,7 +44,12 @@ func TreeDigest() {
 	d.BoundedParallelTreeDigest()
 }
 
-func Fibonacci() {
+func FibonacciSimple() {
 	fi.FibonacciChannel(10)
 	fi.FibonacciLs(10)
+}
+
+func FibonacciWithDone() {
+	fi.FibonacciWithDone()
+	fi.FibonacciListWithDone()
 }
