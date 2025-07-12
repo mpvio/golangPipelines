@@ -100,6 +100,7 @@ func FibonacciListWithDone() {
 	// thus terminating the following 'calculate 100 numbers' function.
 	go func() {
 		<-time.After(1 * time.Millisecond)
+		fmt.Println("D - done!")
 		close(done)
 	}()
 
